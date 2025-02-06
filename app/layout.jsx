@@ -1,6 +1,8 @@
 import { JetBrains_Mono } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/Header'
+import LoadPage from '@/components/LoadPage'
+import LoadStair from '@/components/LoadStair'
 
 const jetbrainsMono = JetBrains_Mono({
 	subsets: ['latin'],
@@ -18,7 +20,8 @@ export default function RootLayout({ children }) {
 		<html lang='ru'>
 			<body className={jetbrainsMono.variable}>
 				<Header />
-				{children}
+				<LoadStair />
+				<LoadPage>{children}</LoadPage>
 			</body>
 		</html>
 	)

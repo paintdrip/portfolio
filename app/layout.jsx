@@ -1,8 +1,8 @@
 import { JetBrains_Mono } from 'next/font/google'
 import './globals.css'
-import Header from '@/components/Header'
-import LoadPage from '@/components/LoadPage'
-import LoadStair from '@/components/LoadStair'
+import Header from '@/components/modules/Header'
+import LoadPage from '@/components/loaders/LoadPage'
+import LoadStair from '@/components/loaders/LoadStair'
 
 const jetbrainsMono = JetBrains_Mono({
 	subsets: ['latin'],

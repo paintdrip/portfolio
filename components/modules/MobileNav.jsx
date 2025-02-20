@@ -4,29 +4,7 @@ import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 import { CiMenuFries } from 'react-icons/ci'
-
-const links = [
-	{
-		name: 'главная',
-		path: '/',
-	},
-	{
-		name: 'проекты',
-		path: '/services',
-	},
-	{
-		name: 'резюме',
-		path: '/resume',
-	},
-	{
-		name: 'работа',
-		path: '/work',
-	},
-	{
-		name: 'инфо',
-		path: '/contact',
-	},
-]
+import { links } from '@/constants/links'
 
 const MobileNav = () => {
 	const pathname = usePathname()
@@ -34,7 +12,7 @@ const MobileNav = () => {
 	return (
 		<Sheet>
 			<SheetTrigger className='flex justify-center items-center'>
-				<CiMenuFries className='text=[32px] text-accent' />
+				<CiMenuFries className='w-[25px] h-[25px] text-accent' />
 			</SheetTrigger>
 			<SheetContent className='flex flex-col'>
 				<div className='mt-32 mb-40 text-center text-2xl'>

@@ -9,7 +9,7 @@ const Header = () => {
 			<div className='container mx-auto flex justify-between items-center'>
 				<Link href='/' className='select-none'>
 					<h1 className='text-4xl font-semibold'>
-						пимпирим<span className='text-accent'>.</span>
+						капитошник<span className='text-accent'>.</span>
 					</h1>
 				</Link>
 				{/* десктопная навигация */}

@@ -1,5 +1,6 @@
 import { Photo } from '@/components/modules/Photo'
 import Socials from '@/components/modules/Socials'
+import { Stats } from '@/components/modules/Stats'
 import { Button } from '@/components/ui/button'
 import { FiDownload } from 'react-icons/fi'
 
@@ -30,6 +31,7 @@ export default function Home() {
 					</div>
 				</div>
 			</div>
+			<Stats />
 		</section>
 	)
 }

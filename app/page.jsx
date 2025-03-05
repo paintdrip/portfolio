@@ -14,15 +14,24 @@ export default function Home() {
 						<h1 className='h1 mb-6'>
 							Привет, я <br /> <span className='text-accent'>капитошник</span>
 						</h1>
-						<p className='max-w-[500px] mb-9 text-white/80'>В текущий момент работаю в компании kvokka</p>
+						<p className='max-w-[500px] mb-9 text-white/80'>
+							В текущий момент работаю в компании kvokka
+						</p>
 						{/* кнопки и ссылки */}
 						<div className='flex flex-col xl:flex-row items-center gap-8'>
-							<Button variant='outline' className='uppercase flex items-center gap-2 select-none' size='lg'>
+							<Button
+								variant='outline'
+								className='uppercase flex items-center gap-2 select-none'
+								size='lg'
+							>
 								<FiDownload className='text-xl' />
 								<span>Скачать резюме</span>
 							</Button>
 							<div className='mb-8 xl:mb-0'>
-								<Socials containerStyles='flex gap-4' iconStyles='flex justify-center items-center text-accent text-base hover:bg-accent hover:text-primary hover:transition-all duration-500 w-10 h-10 border border-accent rounded-full' />
+								<Socials
+									containerStyles='flex gap-4'
+									iconStyles='flex justify-center items-center text-accent text-base hover:bg-accent hover:text-primary hover:transition-all duration-500 w-10 h-10 border border-accent rounded-full'
+								/>
 							</div>
 						</div>
 					</div>

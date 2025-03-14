@@ -39,3 +39,18 @@ export const stats = [
 		text: 'Коммитов',
 	},
 ]
+
+export const services = [
+	{
+		num: '01',
+		title: 'Web-Разработка',
+		description: 'description web development',
+		href: '',
+	},
+	{
+		num: '02',
+		title: 'ux ui',
+		description: 'description ux ui',
+		href: '',
+	},
+]

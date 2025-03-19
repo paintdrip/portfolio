@@ -4,7 +4,7 @@ export const links = [
 		path: '/',
 	},
 	{
-		name: 'проекты',
+		name: 'Навыки',
 		path: '/services',
 	},
 	{

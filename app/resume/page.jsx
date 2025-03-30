@@ -1,3 +1,5 @@
+'use client'
+
 import { FaHtml5, FaCss3, FaJs, FaReact, FaFigma } from 'react-icons/fa'
 import { SiTailwindcss, SiNextdotjs } from 'react-icons/si'
 
@@ -9,6 +11,8 @@ import {
 	TooltipTrigger,
 } from '@/components/ui/tooltip'
 import { ScrollArea } from '@/components/ui/scroll-area'
+
+import { motion } from 'framer-motion'
 
 const about = {
 	title: 'Обо мне',
@@ -101,7 +105,14 @@ const skills = {
 
 const Resume = () => {
 	return (
-		<div className='min-h-[80vh] flex items-center justify-center py-12 xl:py-0'>
+		<motion.div
+			initial={{ opacity: 0 }}
+			animate={{
+				opacity: 1,
+				transition: { delay: 2.4, duration: 0.4, ease: 'easeIn' },
+			}}
+			className='min-h-[80vh] flex items-center justify-center py-12 xl:py-0'
+		>
 			<div className='container mx-auto'>
 				<Tabs
 					defaultValue='experience'
@@ -114,7 +125,7 @@ const Resume = () => {
 						<TabsTrigger value='about'>About me</TabsTrigger>
 					</TabsList>
 
-					<div className='min-h-[70px] w-full'>
+					<div className='min-h-[700px] w-full'>
 						{/* experience */}
 						<TabsContent value='experience' className='w-full'>
 							<div className='flex flex-col gap-[30px] text-center xl:text-left'>
@@ -158,7 +169,7 @@ const Resume = () => {
 											return (
 												<li
 													key={index}
-													className='bg-[#232329] h-[184px] py-6 px-10 rounded-[12px] flex flex-col justify-center items-center lg:items-start gap-1'
+													className='bg-[#232329] h-full py-6 px-10 rounded-[12px] flex flex-col justify-center items-center lg:items-start gap-1'
 												>
 													<span className='text-accent'>{item.duration}</span>
 													<h3 className='text-xl max-w-[260px] min-h-[60px] text-center lg:text-left'>
@@ -236,7 +247,7 @@ const Resume = () => {
 					</div>
 				</Tabs>
 			</div>
-		</div>
+		</motion.div>
 	)
 }
 
